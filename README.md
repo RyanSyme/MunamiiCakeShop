@@ -1,21 +1,21 @@
 # **MunamiiCakeShop - Lexicon Final Project**
 
-# *Description*
+### Description
 The app is a demo of an e-commerce web app. It is an extension of an earlier HTML project from earlier in the course, converting it into a functional MVC app.
 Users can look through the various cupcakes and wedding cakes available on the site, add them to a shopping cart and “purchase” them.
 
-## *Fonts*
+## Fonts
 The fonts used are from Google Fonts
 The heading font is ‘Dancing Script’
 The main body font is ‘Poiret One’
 
-# *Colour Pallet*
+## Colour Pallet
 The colours used throughout the web app are:
 #553914
 #E5E5E5
 #CD5BA3
 
-# *General Styling*
+# General Styling
 The Navbar and Footer are uniform across the web app allowing easy navigation.
 The Navbar allows the user to move from page to page and the Footer displays the links to the company’s social media.
 The shop pages have cards displaying the cakes with the ability to add the cakes to the shopping cart.

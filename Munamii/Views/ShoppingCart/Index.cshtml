@@ -1,0 +1,45 @@
+﻿@model ShoppingCartViewModel
+
+
+<h3 class="my-5 intro-title">
+    Shopping cart
+</h3>
+
+
+<div class="row gx-3">
+    <div class="col-8">
+        @foreach (var item in Model.ShoppingCart.ShoppingCartItems)
+        {
+            <div class="card shopping-cart-card mb-2">
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="@item.Cake.ImageUrl" class="img-fluid rounded-start p-2" alt="@item.Cake.Name">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="intro-title">@item.Quantity x @item.Cake.Name</h5>
+                            <div class="d-flex justify-content-between">
+                                <h6>@item.Cake.Description</h6>
+                                <h2>@item.Cake.Price.ToString("c2")</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+    <div class="col-4">
+        <div class="card shopping-cart-card p-3">
+            <div class="row">
+                <h4 class="col intro-title">Total:</h4>
+                <h4 class="col about-text text-end">@Model.ShoppingCartTotal.ToString("c2")</h4>
+            </div>
+            <hr />
+            <div class="text-center d-grid">
+                <a class="btn btn-card" asp-controller="Order" asp-action="Checkout">
+                    <h5>Go to Checkout</h5>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,18 @@
+﻿@model Cake
+
+    <div class="card">
+        <img class="card-img-top card-img" src="@Model.ImageUrl" alt="@Model.Name">
+        <div class="card-body">
+            <a class="btn btn-card" asp-controller="ShoppingCart" asp-action="AddToShoppingCart" asp-route-cakeId="@Model.CakeId">ADD TO CART</a>
+            <div class="card-info-container">
+                <h4 class="card-title">
+                    <a asp-controller="Cake"
+                        asp-action="Details"
+                        asp-route-id="@Model.CakeId"
+                        class="cake-link">@Model.Name</a>
+                </h4>
+                <p class="card-price">@Model.Price.ToString("c2")</p>
+            </div>
+        </div>
+    </div>
+

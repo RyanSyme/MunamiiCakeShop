@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Poiret+One&display=swap');
+
+
+/* -----------------------General Styling----------------------- */
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poiret One', cursive;
+    margin: 0;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+}
+
+.intro-title {
+    font-family: 'Dancing Script', cursive;
+    font-size: 3rem;
+    color: #553914;
+    margin: 2rem;
+}
+
+a {
+    color: #CD5BA3 !important;
+    text-decoration: none;
+}
+
+    a:hover {
+        color: #553914 !important;
+    }
+
+form {
+    margin: auto;
+    max-width: 50vw;
+    background-color: #E5E5E5;
+    padding: 5px;
+}
+
+.main-container {
+    max-width: 100%;
+    padding: 0;
+}
+
+/* -----------------------Navbar----------------------- */
+
+.navbar {
+    font-family: 'Dancing Script', cursive;
+    font-weight: 700;
+    font-size: 2rem;
+    background-color: #E5E5E5;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 0;
+    padding: 1rem 10%;
+}
+
+.nav-item {
+    list-style-type: none;
+    margin: 0 auto;
+}
+
+.nav-link {
+    color: #CD5BA3;
+    text-decoration: none;
+}
+
+.nav-logo {
+    display: flex;
+    width: 50px;
+}
+
+/* -----------------------Home----------------------- */
+
+.callout-container {
+    height: 60vh;
+    background: url(../Images/background.jpg) no-repeat bottom right fixed;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+    .callout-container img {
+        width: 25%;
+    }
+
+.callout-intro {
+    margin: auto;
+    width: 80%;
+}
+
+cotw {
+    color: #CD5BA3;
+}
+
+.about-img {
+    margin: 2rem;
+    max-width: 50%;
+}
+
+.about-text {
+    font-size: 1.8rem;
+    max-width: 50%;
+    margin: auto
+}
+
+
+/* -----------------------Product Card----------------------- */
+
+
+.products-title {
+    font-family: 'Dancing Script', cursive;
+    font-size: 3.5rem;
+    color: #553914;
+    margin: 4rem 0 0 0;
+}
+
+.underline {
+    width: 150px;
+    margin-bottom: 4rem;
+    color: #553914;
+    height: 4px !important;
+    background-color: #553914;
+    margin: auto;
+    margin-bottom: 1.5rem;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
+    transition: 0.3s;
+    border-radius: 5px;
+    width: 100%;
+    max-height: 100%;
+}
+
+.card-info-container p, h4 {
+    margin: 1rem;
+}
+
+.card-img {
+    border-radius: 5px 5px 0 0;
+    width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    min-height: 620px;
+}
+
+.card-holder {
+    margin: 2rem 2rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 4rem 1.5rem;
+}
+
+.card-title {
+    font-family: 'Dancing Script', cursive;
+    font-size: 24px;
+    color: #CD5BA3;
+    font-weight: 700;
+}
+
+.card-price {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2rem;
+    color: #553914;
+    font-weight: 700;
+}
+
+.btn-card {
+    background-color: #CD5BA3 !important;
+    color: #E5E5E5 !important;
+}
+
+    .btn-card:hover {
+        background-color: #553914 !important;
+        color: #E5E5E5 !important;
+    }
+
+.cake-link {
+    font-size: 2rem;
+}
+
+
+/* -----------------------Footer----------------------- */
+
+.contact-link {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+footer {
+    margin-top: 1.5rem;
+    padding: 0 0 10px 0;
+    background-color: #E5E5E5;
+    padding: 1rem 20% 0 20%;
+}
+
+.footer-title {
+    margin: 0;
+    padding: 1rem;
+    font-size: 24px;
+}
+
+footer ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: space-around;
+    font-size: 40px;
+    margin: 0 3rem;
+    font-size: 50px;
+    text-align: center;
+    color: #159da0;
+}
+
+/* -----------------------Tablet Screens----------------------- */
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        font-size: 1rem;
+        padding: 0.5rem 20%;
+        align-items: center;
+    }
+
+    .nav-logo {
+        display: none;
+        font-size: 40px;
+    }
+
+    .about-img {
+        margin: 1rem;
+    }
+
+    .about-text {
+        font-size: 1.2rem;
+    }
+
+    .intro-title {
+        margin: 0;
+    }
+
+    .card-holder {
+        margin: 1rem 2rem;
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+        gap: 2rem 2rem;
+    }
+
+    .card-img {
+        min-height: 310px;
+    }
+}
+
+/* -----------------------Mobile Screens----------------------- */
+
+@media screen and (max-width: 425px) {
+    .navbar {
+        font-size: 0.7rem;
+        padding: 0.5rem 20%;
+        align-items: center;
+    }
+
+    .nav-item {
+        padding: 0 1rem;
+    }
+
+    .nav-logo {
+        display: none;
+    }
+
+    .callout-container {
+        height: 25vh;
+    }
+
+    .intro-title {
+        font-family: 'Dancing Script', cursive;
+        font-size: 2.5rem;
+    }
+
+    footer {
+        padding: 1rem 0 0 0;
+    }
+
+    .footer-title {
+        display: none;
+    }
+
+    footer ul {
+        display: flex;
+        flex-direction: column;
+        font-size: 40px;
+        margin: 0 1rem;
+        padding: 0.8rem;
+    }
+
+    .about-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about-img {
+        margin: 0;
+        max-width: 40%;
+    }
+
+    .about-text {
+        font-size: 1.2rem;
+        margin: 0 1rem;
+        max-width: 100%;
+    }
+
+    .intro-title {
+        margin-top: 0.6rem;
+    }
+
+    .contact-container {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+        .contact-container h3 {
+            font-size: 2.2rem;
+        }
+
+        .contact-container p {
+            font-size: 1.1rem;
+        }
+
+    .card-holder {
+        margin: 1rem 1rem;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2rem 1rem;
+    }
+
+    .card-img {
+        min-height: none;
+    }
+}

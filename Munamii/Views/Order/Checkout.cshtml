@@ -1,0 +1,48 @@
+﻿@model Order
+
+<form asp-action="Checkout" method="post" role="form">
+    <h3 class="my-5">Please enter your details</h3>
+
+    <div asp-validation-summary="All" class="text-danger" ></div>
+    
+    @*customer order form*@
+    <div class="col-6">
+        <div class="row g-2">
+            <div class="col">
+                <label asp-for="FirstName" class="form-label about-text"></label>
+                <input asp-for="FirstName" class="form-control" />
+                <span asp-validation-for="FirstName" class="text-danger"></span>
+            </div>
+            <div class="col">
+                <label asp-for="LastName" class="form-label about-text"></label>
+                <input asp-for="LastName" class="form-control" />
+                <span asp-validation-for="LastName" class="text-danger"></span>
+            </div>
+            <div class="col">
+                <label asp-for="Address" class="form-label about-text"></label>
+                <input asp-for="Address" class="form-control about-text" />
+                <span asp-validation-for="Address" class="text-danger"></span>
+            </div>
+            <div class="col">
+                <label asp-for="PostCode" class="form-label about-text"></label>
+                <input asp-for="PostCode" class="form-control" />
+                <span asp-validation-for="PostCode" class="text-danger"></span>
+            </div>
+            <div class="col">
+                <label asp-for="City" class="form-label about-text"></label>
+                <input asp-for="City" class="form-control" />
+                <span asp-validation-for="City" class="text-danger"></span>
+            </div>
+            <div class="col">
+                <label asp-for="Email" class="form-label about-text"></label>
+                <input asp-for="Email" class="form-control" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="mt-2">
+            <div class=col>
+                <input type="submit" class="btn btn-card" value=Complete Order />
+            </div>
+        </div>
+    </div>
+</form>

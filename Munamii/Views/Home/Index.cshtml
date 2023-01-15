@@ -1,0 +1,27 @@
+﻿@model HomeViewModel
+
+<main>
+    <div class="callout-container">
+        <img src="Images\logo.png" />
+    </div>
+    <div class="callout-intro">
+        <h1 class="intro-title">Hi! Welcome to Munamii Cakery!</h1>
+        <hr class="underline"/>
+        <p class="about-text">
+            We offer you the most delicious cakes and cupcakes for all kinds of events and celebrations. Browse
+            around to discover what you would like to buy!
+        </p>
+    </div>
+    <div class="container">
+        <h3 class="intro-title cotw">Cakes of the week</h3>
+        <hr class="underline" />
+        <div class="row">
+            @foreach (var cake in Model.CakesOfTheWeek)
+            {
+                <div class="col-sm">
+                    <partial name="_CakeCard" model="cake" />
+                </div>
+            }
+        </div>
+    </div>
+</main>

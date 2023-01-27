@@ -1,19 +1,21 @@
 ﻿@model Cake
 
-<h3 class="my-5">
+<h3 class="my-5 intro-title">
     @Model.Name
 </h3>
 <hr class="underline" />
+<div class="container">
 
 <div class="row gx-5">
     <img class="img-fluid col-5" src="@Model.ImageUrl" alt="@Model.Name" />
     <div class="col-7">
-        <h4>@Model.Description</h4>
-        <h3 class="pull-right">@Model.Price.ToString("c2")</h3>
+            <h4 class="about-text">@Model.Description</h4>
+            <h3 class="pull-right card-price">@Model.Price.ToString("c2")</h3>
         <div class="addToCart">
             <p class="button">
-                <a class="btn btn-secondary" asp-controller="ShoppingCart" asp-action="AddToShoppingCart" asp-route-cakeId="@Model.CakeId">Add to cart</a>
+                <a class="btn btn-card" asp-controller="ShoppingCart" asp-action="AddToShoppingCart" asp-route-cakeId="@Model.CakeId">ADD TO CART</a>
             </p>
         </div>
     </div>
+</div>
 </div>

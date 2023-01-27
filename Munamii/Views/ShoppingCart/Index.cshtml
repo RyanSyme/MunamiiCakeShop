@@ -12,14 +12,14 @@
         {
             <div class="card shopping-cart-card mb-2">
                 <div class="row">
-                    <div class="col-md-4">
-                        <img src="@item.Cake.ImageUrl" class="img-fluid rounded-start p-2" alt="@item.Cake.Name">
+                    <div class="col-md-3">
+                        <img src="@item.Cake.ImageUrl" class="img-fluid rounded-start p-2 img-shoppingcart" alt="@item.Cake.Name">
                     </div>
-                    <div class="col-md-8">
+                    <div class="col-md-9">
                         <div class="card-body">
                             <h5 class="intro-title">@item.Quantity x @item.Cake.Name</h5>
                             <div class="d-flex justify-content-between">
-                                <h6>@item.Cake.Description</h6>
+                                <h4><strong>@item.Cake.Description</strong></h4>
                                 <h2>@item.Cake.Price.ToString("c2")</h2>
                             </div>
                         </div>

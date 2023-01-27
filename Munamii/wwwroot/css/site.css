@@ -41,9 +41,21 @@ form {
     padding: 5px;
 }
 
+.form-text {
+    font-size: 1.5rem;
+    max-width: 70%;
+    margin: auto;
+    font-weight: bold;
+}
+
 .main-container {
     max-width: 100%;
     padding: 0;
+}
+
+.img-shoppingcart {
+    object-fit: cover;
+    max-height: 215px;
 }
 
 /* -----------------------Navbar----------------------- */
@@ -73,6 +85,10 @@ form {
 .nav-logo {
     display: flex;
     width: 50px;
+}
+
+.logout-text {
+    font-size: 1.5rem;
 }
 
 /* -----------------------Home----------------------- */
